@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nutritive/static/css/main.336c8b98.css",
+    "main.css": "/nutritive/static/css/main.4e833c59.css",
     "main.js": "/nutritive/static/js/main.e4b16036.js",
     "static/media/logo.svg": "/nutritive/static/media/logo.385308874580a125f24267f1bd7f1121.svg",
     "static/media/biono.svg": "/nutritive/static/media/biono.32983a4dfb1e7bf2d8e394c5a1860e33.svg",
@@ -18,11 +18,11 @@
     "static/media/main-img-680.jpg": "/nutritive/static/media/main-img-680.aa4d92a4da736f757a1b.jpg",
     "static/media/tonic.jpg": "/nutritive/static/media/tonic.e4def11609d34f079ee7.jpg",
     "index.html": "/nutritive/index.html",
-    "main.336c8b98.css.map": "/nutritive/static/css/main.336c8b98.css.map",
+    "main.4e833c59.css.map": "/nutritive/static/css/main.4e833c59.css.map",
     "main.e4b16036.js.map": "/nutritive/static/js/main.e4b16036.js.map"
   },
   "entrypoints": [
-    "static/css/main.336c8b98.css",
+    "static/css/main.4e833c59.css",
     "static/js/main.e4b16036.js"
   ]
 }
