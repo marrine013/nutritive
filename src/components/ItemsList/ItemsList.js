@@ -10,7 +10,12 @@ const ItemsList = () => {
       <h2>Лідери продажу</h2>
       <div className={styles['items-list']}>
         {itemsList.map(item => (
-          <ItemCard imgSrc={item.img} name={item.name} price={item.price} />
+          <ItemCard
+            key={item.id}
+            imgSrc={item.img}
+            name={item.name}
+            price={item.price}
+          />
         ))}
       </div>
     </Container>
