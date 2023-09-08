@@ -1,0 +1,258 @@
+@import '../../../variables.scss';
+
+.header {
+  padding: 20px 0 15px;
+}
+.logo img {
+  vertical-align: middle;
+  width: 100px;
+  height: auto;
+  padding-top: 3px;
+}
+
+@include min-width(xsmall) {
+  .logo img {
+    width: 125px;
+  }
+}
+
+@include min-width(large) {
+  .logo img {
+    width: 180px;
+  }
+}
+
+.top-menu {
+  display: none;
+  text-transform: uppercase;
+  color: $secondary-text;
+}
+
+@include min-width(medium) {
+  .top-menu {
+    display: block;
+    ul {
+      list-style-type: none;
+    }
+    li {
+      display: inline-block;
+      padding-left: 20px;
+      font-size: 0.75rem;
+    }
+    a {
+      color: $secondary-text;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+@include min-width(large) {
+  .top-menu {
+    li {
+      padding-left: 40px;
+      font-size: 0.875rem;
+    }
+  }
+}
+
+@include min-width(xlarge) {
+  .top-menu {
+    padding-left: 200px;
+  }
+}
+
+.icon-menu {
+  list-style-type: none;
+  li {
+    display: inline-block;
+    margin-left: 3px;
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+    fill: $main-text;
+    transition: 0.3s fill, 0.3s stroke;
+    vertical-align: middle;
+    &:hover {
+      fill: $main-color;
+    }
+  }
+  .favorite-icon svg {
+    fill: $background;
+    stroke: $main-text;
+    stroke-width: 16;
+    &:hover {
+      stroke: $main-color;
+    }
+  }
+}
+
+@include min-width(xsmall) {
+  .icon-menu {
+    li {
+      margin-left: 6px;
+    }
+    svg {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}
+
+@include min-width(medium) {
+  .icon-menu {
+    li {
+      margin-left: 25px;
+    }
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@include min-width(large) {
+  .icon-menu {
+    svg {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+
+.burger-wrapper {
+  width: $bar-width;
+  height: $bar-height + $bar-spacing * 2;
+  cursor: pointer;
+  z-index: 2;
+  margin-left: 20px;
+}
+
+.burger-menu,
+.burger-menu:after,
+.burger-menu:before {
+  width: $bar-width;
+  height: $bar-height;
+  pointer-events: none;
+}
+
+.burger-menu {
+  position: relative;
+  display: block;
+  transform: translate3d(0, $bar-spacing, 0);
+  background-color: $main-text;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.burger-menu:before,
+.burger-menu:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  background: $main-text;
+}
+
+.burger-menu:before {
+  bottom: $bar-spacing;
+  transition: bottom 0.3s 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+    transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.burger-menu:after {
+  top: $bar-spacing;
+
+  transition: top 0.3s 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+    transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+// .burger-menu.animate:after {
+//   top: 0;
+//   transform: rotate(45deg);
+//   transition: top 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+//     transform 0.3s 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+// }
+
+// .burger-menu.animate:before {
+//   bottom: 0;
+//   transform: rotate(-45deg);
+//   transition: bottom 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+//     transform 0.3s 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+// }
+
+@include min-width(medium) {
+  .burger-menu,
+  .burger-wrapper {
+    display: none;
+  }
+}
+
+.brand-header {
+  border-top: 1px solid $secondary-text;
+  border-bottom: 1px solid $secondary-text;
+  padding: 10px 0 8px;
+  margin: 15px 0 0;
+}
+
+.brand {
+  font-family: 'Spectral', serif;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+@include min-width(small) {
+  .brand {
+    font-size: 2.5rem;
+  }
+}
+
+@include min-width(medium) {
+  .brand {
+    font-size: 3.625rem;
+  }
+}
+
+@include min-width(large) {
+  .brand {
+    font-size: 5rem;
+  }
+}
+
+@include min-width(xlarge) {
+  .brand {
+    font-size: 6rem;
+  }
+}
+
+.main-menu {
+  display: none;
+  li {
+    list-style-type: none;
+  }
+}
+
+@include min-width(medium) {
+  .main-menu {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    a {
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+}
+
+@include min-width(large) {
+  .main-menu {
+    font-size: 1rem;
+    gap: 80px;
+  }
+}

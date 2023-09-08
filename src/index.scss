@@ -1,0 +1,80 @@
+@import './variables.scss';
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/nunito-v25-cyrillic_latin-regular.woff2')
+    format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/nunito-v25-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* spectral-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/spectral-v13-cyrillic_latin-regular.woff2')
+    format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: $background;
+  color: $main-text;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Spectral, serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.125rem;
+  padding: 50px 0 20px;
+}
+
+@include min-width(medium) {
+  h2 {
+    font-size: 2.5rem;
+    padding: 80px 0 30px;
+  }
+}
+
+@include min-width(large) {
+  h2 {
+    font-size: 3.75rem;
+    padding: 100px 0 40px;
+  }
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

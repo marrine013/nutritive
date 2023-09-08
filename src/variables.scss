@@ -1,0 +1,48 @@
+$background: #fff;
+$secondary-background: #fff3ea;
+
+$main-text: #222;
+$secondary-text: #c8c8c8;
+$btn-text: #fff;
+
+$main-color: #ce3d57;
+$main-color-btn: #ae3c50;
+$secondary-color: #edaec3;
+$active-color: #7a2a43;
+$btn-hover-color: #ffd5e3;
+
+$block-shadow: 0 0 15px $secondary-text;
+
+$bar-width: 30px;
+$bar-height: 1px;
+$bar-spacing: 10px;
+
+$breakpoint-xsmall: 360px;
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 1024px;
+$breakpoint-xlarge: 1440px;
+
+@mixin min-width($breakpoint) {
+  @if ($breakpoint == xsmall) {
+    @media (min-width: $breakpoint-xsmall) {
+      @content;
+    }
+  } @else if ($breakpoint == small) {
+    @media (min-width: $breakpoint-small) {
+      @content;
+    }
+  } @else if ($breakpoint == medium) {
+    @media (min-width: $breakpoint-medium) {
+      @content;
+    }
+  } @else if ($breakpoint == large) {
+    @media (min-width: $breakpoint-large) {
+      @content;
+    }
+  } @else if ($breakpoint == xlarge) {
+    @media (min-width: $breakpoint-xlarge) {
+      @content;
+    }
+  }
+}

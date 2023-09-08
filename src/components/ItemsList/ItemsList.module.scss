@@ -1,0 +1,12 @@
+@import '../../variables.scss';
+
+.items-list {
+  display: grid;
+  gap: 20px;
+}
+
+@include min-width(medium) {
+  .items-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

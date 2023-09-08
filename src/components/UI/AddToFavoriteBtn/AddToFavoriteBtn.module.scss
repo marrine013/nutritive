@@ -1,0 +1,22 @@
+@import '../../../variables.scss';
+
+.favorite-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid $main-color-btn;
+  background-color: $background;
+  display: flex;
+  align-items: center;
+  svg {
+    fill: $background;
+    width: 30px;
+    height: 30px;
+    transition: fill 0.3s ease;
+    stroke: $main-color-btn;
+    stroke-width: 24;
+  }
+  &:hover svg {
+    fill: $main-color-btn;
+    cursor: pointer;
+  }
+}
