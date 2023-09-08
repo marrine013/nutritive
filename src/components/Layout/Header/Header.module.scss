@@ -233,6 +233,9 @@
   li {
     list-style-type: none;
   }
+  a {
+    color: $main-text;
+  }
 }
 
 @include min-width(medium) {
