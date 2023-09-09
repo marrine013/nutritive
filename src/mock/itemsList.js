@@ -2,6 +2,7 @@ import img1 from './img/face-mask.jpg';
 import img2 from './img/lip-balm.jpg';
 import img3 from './img/tonic.jpg';
 import img4 from './img/hair-set.jpg';
+import img5 from './img/frisson.jpg';
 
 export const itemsList = [
   {
@@ -25,7 +26,7 @@ export const itemsList = [
     brand: 'Lapush',
     categiry: 'обличчя',
     type: 'бальзам для губ',
-    inStock: 1,
+    inStock: 11,
     hit: 1,
     new: 0,
     sale: 0
@@ -38,7 +39,7 @@ export const itemsList = [
     brand: 'Lapush',
     categiry: 'обличчя',
     type: 'тонік',
-    inStock: 1,
+    inStock: 22,
     hit: 1,
     new: 1,
     sale: 0
@@ -51,7 +52,20 @@ export const itemsList = [
     brand: 'Manelle',
     categiry: 'волосся',
     type: 'комплексний набір для волосся',
-    inStock: 1,
+    inStock: 12,
+    hit: 1,
+    new: 0,
+    sale: 0
+  },
+  {
+    id: 5,
+    name: 'Eau de Parfum “Frisson” Rebellion',
+    img: `${img5}`,
+    price: 1100,
+    brand: 'Rebellion',
+    categiry: 'тіло',
+    type: 'Парфумована вода',
+    inStock: 10,
     hit: 1,
     new: 0,
     sale: 0

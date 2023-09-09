@@ -1,7 +1,7 @@
-import ItemCard from '../UI/ItemCard/ItemCard';
-import Container from '../UI/Container/Container';
+import ItemCard from '../../UI/ItemCard/ItemCard';
+import Container from '../../UI/Container/Container';
 
-import { itemsList } from '../../mock/itemsList';
+import { itemsList } from '../../../mock/itemsList';
 import styles from './ItemsList.module.scss';
 
 const ItemsList = () => {

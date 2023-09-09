@@ -1,7 +1,7 @@
-import Container from '../UI/Container/Container';
+import Container from '../../UI/Container/Container';
 import Brand from './Brand';
 
-import { brandList } from '../../mock/brandList';
+import { brandList } from '../../../mock/brandList';
 import styles from './Brands.module.scss';
 
 const Brands = () => {
