@@ -9,4 +9,14 @@
   .items-list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+  .big-item {
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    a {
+      justify-content: space-around;
+    }
+  }
 }

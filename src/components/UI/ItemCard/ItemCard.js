@@ -5,9 +5,12 @@ import styles from './ItemCard.module.scss';
 // import img from '../../../mock/img/face-mask.jpg';
 import AddToFavoriteBtn from '../AddToFavoriteBtn/AddToFavoriteBtn';
 
-const ItemCard = ({ name, imgSrc, price }) => {
+const ItemCard = ({ name, imgSrc, price, className }) => {
+  const classes = className
+    ? `${styles['item-card']}  ${className}`
+    : `${styles['item-card']}`;
   return (
-    <div className={styles['item-card']}>
+    <div className={classes}>
       <a href='' className={styles['item-info']}>
         <span className={styles['img-block']}>
           <img src={imgSrc} alt={name} />

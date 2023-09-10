@@ -9,14 +9,27 @@ const ItemsList = () => {
     <Container>
       <h2>Лідери продажу</h2>
       <div className={styles['items-list']}>
-        {itemsList.map(item => (
-          <ItemCard
-            key={item.id}
-            imgSrc={item.img}
-            name={item.name}
-            price={item.price}
-          />
-        ))}
+        {itemsList.map(item => {
+          if (item.bigImg) {
+            return (
+              <ItemCard
+                key={item.id}
+                className={styles['big-item']}
+                imgSrc={item.bigImg}
+                name={item.name}
+                price={item.price}
+              />
+            );
+          }
+          return (
+            <ItemCard
+              key={item.id}
+              imgSrc={item.img}
+              name={item.name}
+              price={item.price}
+            />
+          );
+        })}
       </div>
     </Container>
   );

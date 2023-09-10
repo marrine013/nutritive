@@ -1,6 +1,7 @@
 import img1 from './img/face-mask.jpg';
 import img2 from './img/lip-balm.jpg';
 import img3 from './img/tonic.jpg';
+import img3Big from './img/tonic-640x835.jpg';
 import img4 from './img/hair-set.jpg';
 import img5 from './img/frisson.jpg';
 
@@ -35,6 +36,7 @@ export const itemsList = [
     id: 3,
     name: 'Тонік для нормальної шкіри “Очищення та догляд” Lapush',
     img: `${img3}`,
+    bigImg: `${img3Big}`,
     price: 151,
     brand: 'Lapush',
     categiry: 'обличчя',

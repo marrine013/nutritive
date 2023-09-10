@@ -13,6 +13,12 @@
   }
 }
 
+@include min-width(large) {
+  .item-card {
+    padding: 20px;
+  }
+}
+
 .item-info {
   display: flex;
   flex-direction: column;
