@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/nutritive/static/css/main.4e833c59.css",
-    "main.js": "/nutritive/static/js/main.e4b16036.js",
+    "main.css": "/nutritive/static/css/main.a04cd9c2.css",
+    "main.js": "/nutritive/static/js/main.9ca82e0c.js",
     "static/media/logo.svg": "/nutritive/static/media/logo.385308874580a125f24267f1bd7f1121.svg",
     "static/media/biono.svg": "/nutritive/static/media/biono.32983a4dfb1e7bf2d8e394c5a1860e33.svg",
+    "static/media/tonic-640x835.jpg": "/nutritive/static/media/tonic-640x835.8193ec9a5512d910c007.jpg",
     "static/media/hair-set.jpg": "/nutritive/static/media/hair-set.e66b8bac76422599f493.jpg",
     "static/media/main-img-1300.jpg": "/nutritive/static/media/main-img-1300.d25189482916dd364908.jpg",
     "static/media/lip-balm.jpg": "/nutritive/static/media/lip-balm.3ce1879034419db64fed.jpg",
     "static/media/main-img-1020.jpg": "/nutritive/static/media/main-img-1020.d38dbb295ecdbbb9c5fd.jpg",
     "static/media/spectral-v13-cyrillic_latin-regular.woff2": "/nutritive/static/media/spectral-v13-cyrillic_latin-regular.ff95fc28e5ba8aa560e3.woff2",
     "static/media/manelle.svg": "/nutritive/static/media/manelle.0162abd47d66588bb0ecccbd69a33939.svg",
+    "static/media/frisson.jpg": "/nutritive/static/media/frisson.9566fc92fab63e818d3d.jpg",
     "static/media/lapush.svg": "/nutritive/static/media/lapush.e41084a54a8e3c6ee3bbcce49c17fa91.svg",
     "static/media/face-mask.jpg": "/nutritive/static/media/face-mask.fa8f319579658050d7c8.jpg",
     "static/media/nunito-v25-cyrillic_latin-700.woff2": "/nutritive/static/media/nunito-v25-cyrillic_latin-700.c7c52554ba3bd95b0e58.woff2",
@@ -18,11 +20,11 @@
     "static/media/main-img-680.jpg": "/nutritive/static/media/main-img-680.aa4d92a4da736f757a1b.jpg",
     "static/media/tonic.jpg": "/nutritive/static/media/tonic.e4def11609d34f079ee7.jpg",
     "index.html": "/nutritive/index.html",
-    "main.4e833c59.css.map": "/nutritive/static/css/main.4e833c59.css.map",
-    "main.e4b16036.js.map": "/nutritive/static/js/main.e4b16036.js.map"
+    "main.a04cd9c2.css.map": "/nutritive/static/css/main.a04cd9c2.css.map",
+    "main.9ca82e0c.js.map": "/nutritive/static/js/main.9ca82e0c.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e833c59.css",
-    "static/js/main.e4b16036.js"
+    "static/css/main.a04cd9c2.css",
+    "static/js/main.9ca82e0c.js"
   ]
 }
