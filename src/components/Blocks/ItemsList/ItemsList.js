@@ -15,7 +15,8 @@ const ItemsList = () => {
               <ItemCard
                 key={item.id}
                 className={styles['big-item']}
-                imgSrc={item.bigImg}
+                imgSrc={item.img}
+                bigImgSrc={item.bigImg}
                 name={item.name}
                 price={item.price}
               />

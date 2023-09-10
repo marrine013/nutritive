@@ -1,19 +1,24 @@
 import Button from '../Button/Button';
+import AddToFavoriteBtn from '../AddToFavoriteBtn/AddToFavoriteBtn';
 
 import styles from './ItemCard.module.scss';
 
-// import img from '../../../mock/img/face-mask.jpg';
-import AddToFavoriteBtn from '../AddToFavoriteBtn/AddToFavoriteBtn';
-
-const ItemCard = ({ name, imgSrc, price, className }) => {
+const ItemCard = ({ name, imgSrc, bigImgSrc, price, className }) => {
   const classes = className
     ? `${styles['item-card']}  ${className}`
     : `${styles['item-card']}`;
+  const bigImgSource = bigImgSrc ? (
+    <source srcSet={bigImgSrc} media='(min-width: 768px)' />
+  ) : null;
+
   return (
     <div className={classes}>
       <a href='' className={styles['item-info']}>
         <span className={styles['img-block']}>
-          <img src={imgSrc} alt={name} />
+          <picture>
+            {bigImgSource}
+            <img src={imgSrc} alt={name} loading='lazy' decoding='async' />
+          </picture>
         </span>
         <span className={styles['item-name']}>{name}</span>
       </a>
