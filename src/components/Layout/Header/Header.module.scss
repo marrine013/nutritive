@@ -193,7 +193,7 @@
 .brand-header {
   border-top: 1px solid $secondary-text;
   border-bottom: 1px solid $secondary-text;
-  padding: 10px 0 8px;
+  padding: 10px 0 0;
   margin: 15px 0 0;
 }
 
@@ -232,9 +232,29 @@
   display: none;
   li {
     list-style-type: none;
+    position: relative;
   }
   a {
     color: $main-text;
+  }
+  ul {
+    position: absolute;
+    background-color: $secondary-background;
+    padding: 25px 30px 20px 50px;
+    margin-top: 8px;
+    left: -30px;
+    border: 1px solid $border-color;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s;
+    li {
+      list-style-type: disc;
+      color: $main-color-btn;
+    }
+
+    li:not(:last-child) {
+      margin-bottom: 8px;
+    }
   }
 }
 
@@ -245,6 +265,10 @@
     gap: 35px;
     text-transform: uppercase;
     font-size: 0.875rem;
+    li {
+      padding-bottom: 8px;
+    }
+
     a {
       &:hover {
         color: $main-color;
@@ -257,5 +281,13 @@
   .main-menu {
     font-size: 1rem;
     gap: 80px;
+    li {
+      &:hover {
+        > ul {
+          transition: transform 0.4s;
+          transform: scaleY(1);
+        }
+      }
+    }
   }
 }

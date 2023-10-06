@@ -58,6 +58,20 @@ const Header = () => {
           <ul className={styles['main-menu']}>
             <li>
               <a href=''>Каталог</a>
+              <ul>
+                <li>
+                  <a href=''>Обличчя</a>
+                </li>
+                <li>
+                  <a href=''>Тіло</a>
+                </li>
+                <li>
+                  <a href=''>Волосся</a>
+                </li>
+                <li>
+                  <a href=''>Набори</a>
+                </li>
+              </ul>
             </li>
             <li>
               <a href=''>Новинки</a>
