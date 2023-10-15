@@ -6,6 +6,9 @@ import SearchIcon from '../../UI/SearchIcon';
 import FavoriteIcon from '../../UI/FavoriteIcon';
 import ShoppingBagIcon from '../../UI/ShoppingBagIcon';
 
+import { mainMenuList } from '../../../mock/mainMenuList';
+import { addMenuList } from '../../../mock/addMenuList';
+
 const Header = () => {
   return (
     <header className={styles.header}>
@@ -15,18 +18,11 @@ const Header = () => {
         </a>
         <nav className={styles['top-menu']}>
           <ul>
-            <li>
-              <a href=''>Про нас</a>
-            </li>
-            <li>
-              <a href=''>Доставка та оплата</a>
-            </li>
-            <li>
-              <a href=''>Блог</a>
-            </li>
-            <li>
-              <a href=''>Контакти</a>
-            </li>
+            {addMenuList.map(item => (
+              <li key={item.id}>
+                <a href=''>{item.name}</a>
+              </li>
+            ))}
           </ul>
         </nav>
         <div className='flex'>
@@ -56,32 +52,20 @@ const Header = () => {
         <Container>
           <div className={styles.brand}>NUTRITIVE cosmetics</div>
           <ul className={styles['main-menu']}>
-            <li>
-              <a href=''>Каталог</a>
-              <ul>
-                <li>
-                  <a href=''>Обличчя</a>
-                </li>
-                <li>
-                  <a href=''>Тіло</a>
-                </li>
-                <li>
-                  <a href=''>Волосся</a>
-                </li>
-                <li>
-                  <a href=''>Набори</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href=''>Новинки</a>
-            </li>
-            <li>
-              <a href=''>Відгуки</a>
-            </li>
-            <li>
-              <a href=''>Акції</a>
-            </li>
+            {mainMenuList.map(item => (
+              <li key={item.id}>
+                <a href=''>{item.name}</a>
+                {item.submenu && item.submenu.length > 0 && (
+                  <ul>
+                    {item.submenu.map(submenuItem => (
+                      <li key={submenuItem.id}>
+                        <a href=''>{submenuItem.name}</a>
+                      </li>
+                    ))} 
+                  </ul>
+                )}
+              </li>
+            ))}
           </ul>
         </Container>
       </div>

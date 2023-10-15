@@ -2,4 +2,133 @@
 
 .footer {
   background-color: $secondary-background;
+  padding: 20px 0;
+  margin-top: 50px;
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+}
+
+@include min-width(medium) {
+  .footer {
+    padding-top: 30px;
+    .logo {
+      width: 120px;
+      grid-area: logo;
+    }
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      'logo menu menu menu'
+      'social menu menu menu';
+  }
+
+  .main-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    flex-grow: 1;
+    li:first-child {
+      grid-row: span 5;
+    }
+  }
+}
+
+@include min-width(large) {
+  .footer {
+    padding: 100px 0 50px;
+    .logo {
+      width: 170px;
+    }
+  }
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  grid-area: menu;
+  li {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    margin-bottom: 15px;
+    ul {
+      padding-top: 15px;
+      li {
+        margin-bottom: 10px;
+        font-size: 0.65rem;
+      }
+      a {
+        color: $secondary-menu-text;
+      }
+    }
+  }
+  a {
+    color: $main-text;
+    &:hover {
+      color: $main-color;
+    }
+  }
+}
+
+@include min-width(medium) {
+  .footer-menu {
+    padding: 0 10px;
+    li {
+      font-size: 0.9rem;
+      ul {
+        li {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}
+
+@include min-width(large) {
+  .footer-menu {
+    li {
+      font-size: 1rem;
+      ul {
+        li {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+.icon-menu {
+  grid-area: social;
+  display: flex;
+  gap: 20px;
+  svg {
+    transition: 0.3s fill;
+    fill: $main-text;
+    &:hover {
+      fill: $main-color;
+    }
+  }
+}
+
+@include min-width(medium) {
+  .icon-menu {
+    svg {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}
+
+@include min-width(large) {
+  .icon-menu {
+    svg {
+      width: 48px;
+      height: 48px;
+    }
+  }
 }

@@ -31,9 +31,7 @@
 @include min-width(medium) {
   .top-menu {
     display: block;
-    ul {
-      list-style-type: none;
-    }
+
     li {
       display: inline-block;
       padding-left: 20px;
@@ -65,7 +63,6 @@
 }
 
 .icon-menu {
-  list-style-type: none;
   li {
     display: inline-block;
     margin-left: 3px;
@@ -231,7 +228,6 @@
 .main-menu {
   display: none;
   li {
-    list-style-type: none;
     position: relative;
   }
   a {
@@ -246,7 +242,7 @@
     border: 1px solid $border-color;
     transform: scaleY(0);
     transform-origin: top;
-    transition: transform 0.3s;
+    transition: transform 0.4s;
     li {
       list-style-type: disc;
       color: $main-color-btn;
@@ -284,7 +280,7 @@
     li {
       &:hover {
         > ul {
-          transition: transform 0.4s;
+          transition: transform 0.5s;
           transform: scaleY(1);
         }
       }
