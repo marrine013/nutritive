@@ -13,6 +13,7 @@
 @include min-width(medium) {
   .footer {
     padding-top: 30px;
+    margin-top: 80px;
     .logo {
       width: 120px;
       grid-area: logo;
@@ -41,6 +42,7 @@
 @include min-width(large) {
   .footer {
     padding: 100px 0 50px;
+    margin-top: 100px;
     .logo {
       width: 170px;
     }
