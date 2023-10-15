@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nutritive/static/css/main.363029eb.css",
-    "main.js": "/nutritive/static/js/main.b25a4538.js",
+    "main.css": "/nutritive/static/css/main.6304ce88.css",
+    "main.js": "/nutritive/static/js/main.b5fb1d9a.js",
     "static/media/logo.svg": "/nutritive/static/media/logo.385308874580a125f24267f1bd7f1121.svg",
     "static/media/biono.svg": "/nutritive/static/media/biono.32983a4dfb1e7bf2d8e394c5a1860e33.svg",
     "static/media/tonic-640x835.jpg": "/nutritive/static/media/tonic-640x835.8193ec9a5512d910c007.jpg",
@@ -20,11 +20,11 @@
     "static/media/main-img-680.jpg": "/nutritive/static/media/main-img-680.aa4d92a4da736f757a1b.jpg",
     "static/media/tonic.jpg": "/nutritive/static/media/tonic.e4def11609d34f079ee7.jpg",
     "index.html": "/nutritive/index.html",
-    "main.363029eb.css.map": "/nutritive/static/css/main.363029eb.css.map",
-    "main.b25a4538.js.map": "/nutritive/static/js/main.b25a4538.js.map"
+    "main.6304ce88.css.map": "/nutritive/static/css/main.6304ce88.css.map",
+    "main.b5fb1d9a.js.map": "/nutritive/static/js/main.b5fb1d9a.js.map"
   },
   "entrypoints": [
-    "static/css/main.363029eb.css",
-    "static/js/main.b25a4538.js"
+    "static/css/main.6304ce88.css",
+    "static/js/main.b5fb1d9a.js"
   ]
 }
