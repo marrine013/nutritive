@@ -1,17 +1,26 @@
-import Header from './components/Layout/Header/Header';
-import Footer from './components/Layout/Footer/Footer';
-import Banner from './components/Blocks/Banner/Banner';
-import Brands from './components/Blocks/Brands/Brands';
-import ItemsList from './components/Blocks/ItemsList/ItemsList';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+import HomePage from './pages/HomePage';
+import ItemPage from './pages/ItemPage';
+import RootLayaut from './pages/RootLayaut';
+import ErrorPage from './pages/ErrorPage';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <RootLayaut />,
+    errorElement: <ErrorPage />,
+    children: [
+      { index: true, element: <HomePage /> },
+      { path: 'item', element: <ItemPage /> }
+    ]
+  }
+]);
 
 function App() {
   return (
     <>
-      <Header />
-      <Banner />
-      <Brands />
-      <ItemsList />
-      <Footer />
+      <RouterProvider router={router} />
     </>
   );
 }

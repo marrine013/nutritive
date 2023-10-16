@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import Button from '../Button/Button';
 import AddToFavoriteBtn from '../AddToFavoriteBtn/AddToFavoriteBtn';
 
@@ -13,7 +15,7 @@ const ItemCard = ({ name, imgSrc, bigImgSrc, price, className }) => {
 
   return (
     <div className={classes}>
-      <a href='' className={styles['item-info']}>
+      <Link to='item' className={styles['item-info']}>
         <span className={styles['img-block']}>
           <picture>
             {bigImgSource}
@@ -21,7 +23,7 @@ const ItemCard = ({ name, imgSrc, bigImgSrc, price, className }) => {
           </picture>
         </span>
         <span className={styles['item-name']}>{name}</span>
-      </a>
+      </Link>
       <span className={styles['item-price']}>{price} грн.</span>
       <div className='flex'>
         <Button className={styles['item-btn']} action={'купити'} />
