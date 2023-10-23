@@ -1,5 +1,11 @@
+import Breadcrumps from '../components/Blocks/Breadcrumps/Breadcrumps';
+
 const ItemPage = () => {
-  return <div>ItemPage</div>;
+  return (
+    <>
+      <Breadcrumps />
+    </>
+  );
 };
 
 export default ItemPage;

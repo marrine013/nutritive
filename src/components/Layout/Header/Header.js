@@ -51,22 +51,24 @@ const Header = () => {
       <div className={styles['brand-header']}>
         <Container>
           <div className={styles.brand}>NUTRITIVE cosmetics</div>
-          <ul className={styles['main-menu']}>
-            {mainMenuList.map(item => (
-              <li key={item.id}>
-                <a href=''>{item.name}</a>
-                {item.submenu && item.submenu.length > 0 && (
-                  <ul>
-                    {item.submenu.map(submenuItem => (
-                      <li key={submenuItem.id}>
-                        <a href=''>{submenuItem.name}</a>
-                      </li>
-                    ))} 
-                  </ul>
-                )}
-              </li>
-            ))}
-          </ul>
+          <nav>
+            <ul className={styles['main-menu']}>
+              {mainMenuList.map(item => (
+                <li key={item.id}>
+                  <a href=''>{item.name}</a>
+                  {item.submenu && item.submenu.length > 0 && (
+                    <ul>
+                      {item.submenu.map(submenuItem => (
+                        <li key={submenuItem.id}>
+                          <a href=''>{submenuItem.name}</a>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </nav>
         </Container>
       </div>
     </header>

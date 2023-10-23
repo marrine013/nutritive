@@ -46,6 +46,7 @@ Gitflow - https://www.atlassian.com/ru/git/tutorials/comparing-workflows/gitflow
       - svg icons
   - Layout
     - Header
+    - Footer
   - Blocks
     - Banner
     - Brands
@@ -56,4 +57,3 @@ Gitflow - https://www.atlassian.com/ru/git/tutorials/comparing-workflows/gitflow
 ### To do:
 
 - complete ItemsList (big cards, versatility?)
-- footer
